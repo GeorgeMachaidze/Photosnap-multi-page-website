@@ -121,7 +121,7 @@ function Home() {
           <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
             by John Appleseed
           </p>
-          <hr className="w-full mt-4" />
+          <hr className="w-full mt-4 opacity-25" />
           <div className="flex flex-row mt-5 justify-between ">
             <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
               READ STORY
@@ -141,7 +141,7 @@ function Home() {
           <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
             by Benjamin Cruz
           </p>
-          <hr className="w-full mt-4" />
+          <hr className="w-full mt-4 opacity-25" />
           <div className="flex flex-row mt-5 justify-between ">
             <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
               READ STORY
@@ -161,7 +161,7 @@ function Home() {
           <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
             by Alexei Borodin
           </p>
-          <hr className="w-full mt-4" />
+          <hr className="w-full mt-4 opacity-25" />
           <div className="flex flex-row mt-5 justify-between ">
             <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
               READ STORY
@@ -181,7 +181,7 @@ function Home() {
           <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
             by Samantha Brooke
           </p>
-          <hr className="w-full mt-4" />
+          <hr className="w-full mt-4 opacity-25" />
           <div className="flex flex-row mt-5 justify-between ">
             <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
               READ STORY
