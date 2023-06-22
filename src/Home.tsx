@@ -1,7 +1,3 @@
-import { useState } from "react";
-import logo from "./assets/logo.png";
-import logoText from "./assets/PHOTOSNAP.png";
-import X from "./assets/X.png";
 import firstImage from "./assets/home/mobile/create-and-share.jpg";
 import secondImage from "./assets/home/mobile/beautiful-stories.jpg";
 import thirdImage from "./assets/home/mobile/designed-for-everyone.jpg";
@@ -12,34 +8,10 @@ import mountains from "./assets/stories/mobile/mountains.jpg";
 import newYork from "./assets/stories/mobile/cityscapes.jpg";
 import voyage from "./assets/stories/mobile/18-days-voyage.jpg";
 import architecturals from "./assets/stories/mobile/architecturals.jpg";
-import logoTextWhite from "./assets/PHOTOSNAPWhite.png";
-import facebook from "./assets/home/mobile/Facebook.png";
-import instagram from "./assets/home/mobile/Instagram.png";
-import printerest from "./assets/home/mobile/pinterest.png";
-import twitter from "./assets/home/mobile/Twitter.png";
-import youtube from "./assets/home/mobile/Youtube.png";
 
 function Home() {
-  const [menu, setMenu] = useState(true);
-  const handleMenuClick = () => {
-    setMenu(!menu);
-  };
   return (
     <div>
-      <div className="p-[24px] flex  ">
-        <img className="w-[16px] h-[16px]" src={logo} alt="" />
-        <img className="ml-2 h-[16px]" src={logoText} alt="" />
-        <div className="ml-[140px]" onClick={handleMenuClick}>
-          {menu ? (
-            <div className=" flex flex-col gap-[4px]">
-              <hr className="  bg-black w-[20px] h-[2px]"></hr>
-              <hr className="  bg-black w-[20px] h-[3px]"></hr>
-            </div>
-          ) : (
-            <img className=" w-[15px] h-[15px]" src={X} alt="" />
-          )}
-        </div>
-      </div>
       <div>
         <img src={firstImage} alt="" />
         <div className="bg-black pl-[33px] pr-[24px] pb-[72px]">
@@ -111,30 +83,31 @@ function Home() {
         </div>
       </div>
       <div
-        className="w-[375px] h-[375px]"
+        className="w-[375px] h-[375px] relative"
         style={{ backgroundImage: `url(${mountains})` }}
       >
-        <div className="pl-[33px] pr-[24px] ">
-          <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px] pt-[236px]">
+        <div className="pl-[33px] pr-[24px] z-20 relative ">
+          <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px] pt-[236px] z-10 ">
             The Mountains
           </h1>
-          <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
+          <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white ">
             by John Appleseed
           </p>
           <hr className="w-full mt-4 opacity-25" />
-          <div className="flex flex-row mt-5 justify-between ">
-            <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
+          <div className="flex flex-row mt-5 justify-between   ">
+            <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold  ">
               READ STORY
             </p>
             <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
           </div>
         </div>
+        <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
       </div>
       <div
-        className="w-[375px] h-[375px]"
+        className="w-[375px] h-[375px] relative"
         style={{ backgroundImage: `url(${newYork})` }}
       >
-        <div className="pl-[33px] pr-[24px] ">
+        <div className="pl-[33px] pr-[24px] relative z-10 ">
           <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px] pt-[236px]">
             Sunset Cityscapes
           </h1>
@@ -149,12 +122,13 @@ function Home() {
             <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
           </div>
         </div>
+        <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
       </div>
       <div
-        className="w-[375px] h-[375px]"
+        className="w-[375px] h-[375px] relative"
         style={{ backgroundImage: `url(${voyage})` }}
       >
-        <div className="pl-[33px] pr-[24px] ">
+        <div className="pl-[33px] pr-[24px] relative z-10 ">
           <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px] pt-[236px]">
             18 Days Voyage
           </h1>
@@ -169,12 +143,13 @@ function Home() {
             <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
           </div>
         </div>
+        <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
       </div>
       <div
-        className="w-[375px] h-[375px]"
+        className="w-[375px] h-[375px] relative"
         style={{ backgroundImage: `url(${architecturals})` }}
       >
-        <div className="pl-[33px] pr-[24px] ">
+        <div className="pl-[33px] pr-[24px] relative z-10 ">
           <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px] pt-[236px]">
             Architecturals
           </h1>
@@ -189,6 +164,7 @@ function Home() {
             <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
           </div>
         </div>
+        <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
       </div>
       <div className="mt-20 pb-20 pl-[33px] pr-[33px]">
         <div className="flex flex-col items-center">
@@ -234,46 +210,6 @@ function Home() {
             videos, Google Maps, and more.
           </p>
         </div>
-      </div>
-      <div className="bg-black pb-[56px]">
-        <div className="flex justify-center pt-[56px]">
-          <img className="w-[16px] h-[16px]" src={logo} alt="" />
-          <img className="ml-2 h-[16px]" src={logoTextWhite} alt="" />
-        </div>
-        <div className="flex justify-center mt-[32px] gap-[13px]">
-          <img className="w-5 h-5" src={facebook} alt="" />
-          <img className="w-5 h-5" src={youtube} alt="" />
-          <img className="w-5 h-5" src={twitter} alt="" />
-          <img className="w-5 h-5" src={printerest} alt="" />
-          <img className="w-5 h-5" src={instagram} alt="" />
-        </div>
-        <div className="flex flex-col gap-5 items-center mt-[50px]">
-          <h1 className="text-white text-[12px] font-sans font-bold tracking-[2px]">
-            HOME
-          </h1>
-          <h1 className="text-white text-[12px] font-sans font-bold tracking-[2px]">
-            STORIES
-          </h1>
-          <h1 className="text-white text-[12px] font-sans font-bold tracking-[2px]">
-            FEATURES
-          </h1>
-          <h1 className="text-white text-[12px] font-sans font-bold tracking-[2px]">
-            PRICING
-          </h1>
-        </div>
-        <div className="flex flex-row justify-center pt-[120px]">
-          <p className="text-white font-sans leading-[16px] text-[12px] tracking-[2px] font-bold">
-            GET AN INVITE
-          </p>
-          <img
-            className="h-[12px] mt-[2px] ml-[18px]"
-            src={whiteArrow}
-            alt=""
-          />
-        </div>
-        <p className="pt-10 text-white opacity-60 text-center">
-          Copyright 2019. All Rights Reserved
-        </p>
       </div>
     </div>
   );

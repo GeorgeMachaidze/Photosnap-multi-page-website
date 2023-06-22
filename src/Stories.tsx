@@ -1,7 +1,5 @@
 import { useState } from "react";
-import logo from "./assets/logo.png";
-import logoText from "./assets/PHOTOSNAP.png";
-import X from "./assets/X.png";
+
 import moonOfAppalacia from "./assets/stories/mobile/moon-of-appalacia.jpg";
 import whiteArrow from "./assets/arrow.png";
 import mountains from "./assets/stories/mobile/mountains.jpg";
@@ -20,35 +18,11 @@ import milky from "./assets/stories/mobile/milky-way.jpg";
 import dark from "./assets/stories/mobile/dark-forest.jpg";
 import somwarpet from "./assets/stories/mobile/somwarpet.jpg";
 import dreams from "./assets/stories/mobile/land-of-dreams.jpg";
-import logoTextWhite from "./assets/PHOTOSNAPWhite.png";
-import facebook from "./assets/home/mobile/Facebook.png";
-import instagram from "./assets/home/mobile/Instagram.png";
-import printerest from "./assets/home/mobile/pinterest.png";
-import twitter from "./assets/home/mobile/Twitter.png";
-import youtube from "./assets/home/mobile/Youtube.png";
 
 function Stories() {
-  const [menu, setMenu] = useState(true);
-  const handleMenuClick = () => {
-    setMenu(!menu);
-  };
   return (
     <>
       <div>
-        <div className="p-[24px] flex  ">
-          <img className="w-[16px] h-[16px]" src={logo} alt="" />
-          <img className="ml-2 h-[16px]" src={logoText} alt="" />
-          <div className="ml-[140px]" onClick={handleMenuClick}>
-            {menu ? (
-              <div className=" flex flex-col gap-[4px]">
-                <hr className="  bg-black w-[20px] h-[2px]"></hr>
-                <hr className="  bg-black w-[20px] h-[3px]"></hr>
-              </div>
-            ) : (
-              <img className=" w-[15px] h-[15px]" src={X} alt="" />
-            )}
-          </div>
-        </div>
         <div>
           <div
             className="w-[375px] h-[315px]"
@@ -84,10 +58,10 @@ function Stories() {
           </div>
         </div>
         <div
-          className="w-[375px] h-[375px]"
+          className="w-[375px] h-[375px] relative"
           style={{ backgroundImage: `url(${mountains})` }}
         >
-          <div className="pl-[33px] pr-[24px] ">
+          <div className="pl-[33px] pr-[24px] relative z-10 ">
             <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
               April 16th 2020
             </h1>
@@ -105,12 +79,13 @@ function Stories() {
               <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
             </div>
           </div>
+          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
         </div>
         <div
-          className="w-[375px] h-[375px]"
+          className="w-[375px] h-[375px] relative"
           style={{ backgroundImage: `url(${newYork})` }}
         >
-          <div className="pl-[33px] pr-[24px] ">
+          <div className="pl-[33px] pr-[24px] relative z-10 ">
             <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
               April 14th 2020
             </h1>
@@ -128,12 +103,13 @@ function Stories() {
               <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
             </div>
           </div>
+          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
         </div>
         <div
-          className="w-[375px] h-[375px]"
+          className="w-[375px] h-[375px] relative"
           style={{ backgroundImage: `url(${voyage})` }}
         >
-          <div className="pl-[33px] pr-[24px] ">
+          <div className="pl-[33px] pr-[24px] relative z-10 ">
             <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
               April 11th 2020
             </h1>
@@ -151,12 +127,13 @@ function Stories() {
               <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
             </div>
           </div>
+          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
         </div>
         <div
-          className="w-[375px] h-[375px]"
+          className="w-[375px] h-[375px] relative"
           style={{ backgroundImage: `url(${architecturals})` }}
         >
-          <div className="pl-[33px] pr-[24px] ">
+          <div className="pl-[33px] pr-[24px] relative z-10 ">
             <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
               April 9th 2020
             </h1>
@@ -174,12 +151,13 @@ function Stories() {
               <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
             </div>
           </div>
+          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
         </div>
         <div
-          className="w-[375px] h-[375px]"
+          className="w-[375px] h-[375px] relative"
           style={{ backgroundImage: `url(${world})` }}
         >
-          <div className="pl-[33px] pr-[24px] ">
+          <div className="pl-[33px] pr-[24px] relative z-10 ">
             <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
               April 7th 2020
             </h1>
@@ -197,12 +175,13 @@ function Stories() {
               <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
             </div>
           </div>
+          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
         </div>
         <div
-          className="w-[375px] h-[375px]"
+          className="w-[375px] h-[375px] relative"
           style={{ backgroundImage: `url(${uforeseen})` }}
         >
-          <div className="pl-[33px] pr-[24px] ">
+          <div className="pl-[33px] pr-[24px] relative z-10 ">
             <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
               April 3th 2020
             </h1>
@@ -220,12 +199,13 @@ function Stories() {
               <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
             </div>
           </div>
+          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
         </div>
         <div
-          className="w-[375px] h-[375px]"
+          className="w-[375px] h-[375px] relative"
           style={{ backgroundImage: `url(${lion})` }}
         >
-          <div className="pl-[33px] pr-[24px] ">
+          <div className="pl-[33px] pr-[24px] relative z-10 ">
             <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
               April 29th 2020
             </h1>
@@ -243,12 +223,13 @@ function Stories() {
               <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
             </div>
           </div>
+          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
         </div>
         <div
-          className="w-[375px] h-[375px]"
+          className="w-[375px] h-[375px] relative"
           style={{ backgroundImage: `url(${tree})` }}
         >
-          <div className="pl-[33px] pr-[24px] ">
+          <div className="pl-[33px] pr-[24px] relative z-10 ">
             <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
               March 21th 2020
             </h1>
@@ -266,12 +247,13 @@ function Stories() {
               <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
             </div>
           </div>
+          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
         </div>
         <div
-          className="w-[375px] h-[375px]"
+          className="w-[375px] h-[375px] relative"
           style={{ backgroundImage: `url(${see})` }}
         >
-          <div className="pl-[33px] pr-[24px] ">
+          <div className="pl-[33px] pr-[24px] relative z-10 ">
             <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
               April 21th 2020
             </h1>
@@ -289,12 +271,13 @@ function Stories() {
               <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
             </div>
           </div>
+          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
         </div>
         <div
-          className="w-[375px] h-[375px]"
+          className="w-[375px] h-[375px] relative"
           style={{ backgroundImage: `url(${horse})` }}
         >
-          <div className="pl-[33px] pr-[24px] ">
+          <div className="pl-[33px] pr-[24px] relative z-10 ">
             <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
               March 16th 2020
             </h1>
@@ -312,12 +295,13 @@ function Stories() {
               <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
             </div>
           </div>
+          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
         </div>
         <div
-          className="w-[375px] h-[375px]"
+          className="w-[375px] h-[375px] relative"
           style={{ backgroundImage: `url(${wave})` }}
         >
-          <div className="pl-[33px] pr-[24px] ">
+          <div className="pl-[33px] pr-[24px] relative z-10 ">
             <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
               March 11th 2020
             </h1>
@@ -335,12 +319,13 @@ function Stories() {
               <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
             </div>
           </div>
+          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
         </div>
         <div
-          className="w-[375px] h-[375px]"
+          className="w-[375px] h-[375px] relative"
           style={{ backgroundImage: `url(${calm})` }}
         >
-          <div className="pl-[33px] pr-[24px] ">
+          <div className="pl-[33px] pr-[24px] relative z-10 ">
             <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
               March 9th 2020
             </h1>
@@ -358,12 +343,13 @@ function Stories() {
               <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
             </div>
           </div>
+          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
         </div>
         <div
-          className="w-[375px] h-[375px]"
+          className="w-[375px] h-[375px] relative"
           style={{ backgroundImage: `url(${milky})` }}
         >
-          <div className="pl-[33px] pr-[24px] ">
+          <div className="pl-[33px] pr-[24px] relative z-10 ">
             <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
               March 5th 2020
             </h1>
@@ -381,12 +367,13 @@ function Stories() {
               <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
             </div>
           </div>
+          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
         </div>
         <div
-          className="w-[375px] h-[375px]"
+          className="w-[375px] h-[375px] relative"
           style={{ backgroundImage: `url(${dark})` }}
         >
-          <div className="pl-[33px] pr-[24px] ">
+          <div className="pl-[33px] pr-[24px] relative z-10 ">
             <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
               March 4th 2020
             </h1>
@@ -404,12 +391,13 @@ function Stories() {
               <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
             </div>
           </div>
+          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
         </div>
         <div
-          className="w-[375px] h-[375px]"
+          className="w-[375px] h-[375px] relative"
           style={{ backgroundImage: `url(${somwarpet})` }}
         >
-          <div className="pl-[33px] pr-[24px] ">
+          <div className="pl-[33px] pr-[24px] relative z-10 ">
             <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
               March 1st 2020
             </h1>
@@ -427,12 +415,13 @@ function Stories() {
               <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
             </div>
           </div>
+          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
         </div>
         <div
-          className="w-[375px] h-[375px]"
+          className="w-[375px] h-[375px] relative"
           style={{ backgroundImage: `url(${dreams})` }}
         >
-          <div className="pl-[33px] pr-[24px] ">
+          <div className="pl-[33px] pr-[24px] relative z-10 ">
             <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
               February 25th 2020
             </h1>
@@ -450,46 +439,7 @@ function Stories() {
               <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
             </div>
           </div>
-        </div>
-        <div className="bg-black pb-[56px]">
-          <div className="flex justify-center pt-[56px]">
-            <img className="w-[16px] h-[16px]" src={logo} alt="" />
-            <img className="ml-2 h-[16px]" src={logoTextWhite} alt="" />
-          </div>
-          <div className="flex justify-center mt-[32px] gap-[13px]">
-            <img className="w-5 h-5" src={facebook} alt="" />
-            <img className="w-5 h-5" src={youtube} alt="" />
-            <img className="w-5 h-5" src={twitter} alt="" />
-            <img className="w-5 h-5" src={printerest} alt="" />
-            <img className="w-5 h-5" src={instagram} alt="" />
-          </div>
-          <div className="flex flex-col gap-5 items-center mt-[50px]">
-            <h1 className="text-white text-[12px] font-sans font-bold tracking-[2px]">
-              HOME
-            </h1>
-            <h1 className="text-white text-[12px] font-sans font-bold tracking-[2px]">
-              STORIES
-            </h1>
-            <h1 className="text-white text-[12px] font-sans font-bold tracking-[2px]">
-              FEATURES
-            </h1>
-            <h1 className="text-white text-[12px] font-sans font-bold tracking-[2px]">
-              PRICING
-            </h1>
-          </div>
-          <div className="flex flex-row justify-center pt-[120px]">
-            <p className="text-white font-sans leading-[16px] text-[12px] tracking-[2px] font-bold">
-              GET AN INVITE
-            </p>
-            <img
-              className="h-[12px] mt-[2px] ml-[18px]"
-              src={whiteArrow}
-              alt=""
-            />
-          </div>
-          <p className="pt-10 text-white opacity-60 text-center">
-            Copyright 2019. All Rights Reserved
-          </p>
+          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
         </div>
       </div>
     </>
