@@ -1,5 +1,7 @@
 import hero from "./assets/pricing/mobile/hero.jpg";
 import rectangle from "./assets/home/mobile/Rectangle.png";
+import footerImage from "./assets/footerImage.jpg";
+import whiteArrow from "./assets/arrow.png";
 
 function Pricing() {
   return (
@@ -96,7 +98,383 @@ function Pricing() {
           </div>
         </div>
         <div className="ml-[28px] mr-[28px] mt-[64px]">
-          <h1 className="font-sans">THE FEATURES</h1>
+          <h1 className="font-sans font-bold text-3 leading-4 tracking-[2px]">
+            THE FEATURES
+          </h1>
+          <hr className="w-full h-[2px] mt-[23px] bg-black" />
+          <div className="mt-[23px]">
+            <h1 className="font-sans font-bold text-3 leading-4 tracking-[2px]">
+              UNLIMITED STORY POSTING
+            </h1>
+            <div className="mt-4 flex justify-between ">
+              <div>
+                <p className="font-sans font-bold opacity-60 leading-[13px] tracking-[1.66px] text-[10px] ">
+                  BASIC
+                </p>
+                <svg
+                  className="mt-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="15"
+                >
+                  <path
+                    fill="none"
+                    stroke="#000"
+                    strokeWidth="2"
+                    d="M1 8.124L5.623 13 17 1"
+                  />
+                </svg>
+              </div>
+              <div>
+                <p className="font-sans font-bold opacity-60 leading-[13px] tracking-[1.66px] text-[10px] ">
+                  PRO
+                </p>
+                <svg
+                  className="mt-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="15"
+                >
+                  <path
+                    fill="none"
+                    stroke="#000"
+                    strokeWidth="2"
+                    d="M1 8.124L5.623 13 17 1"
+                  />
+                </svg>
+              </div>
+              <div>
+                <p className="font-sans font-bold opacity-60 leading-[13px] tracking-[1.66px] text-[10px] ">
+                  BUSINESS
+                </p>
+                <svg
+                  className="mt-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="15"
+                >
+                  <path
+                    fill="none"
+                    stroke="#000"
+                    strokeWidth="2"
+                    d="M1 8.124L5.623 13 17 1"
+                  />
+                </svg>
+              </div>
+            </div>
+            <hr className="w-full h-[2px] mt-[24px] bg-gray-300" />
+            <h1 className="font-sans font-bold text-3 mt-[24px] leading-4 tracking-[2px]">
+              UNLIMITED PHOTO UPLOAD
+            </h1>
+            <div className="mt-4 flex justify-between ">
+              <div>
+                <p className="font-sans font-bold opacity-60 leading-[13px] tracking-[1.66px] text-[10px] ">
+                  BASIC
+                </p>
+                <svg
+                  className="mt-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="15"
+                >
+                  <path
+                    fill="none"
+                    stroke="#000"
+                    strokeWidth="2"
+                    d="M1 8.124L5.623 13 17 1"
+                  />
+                </svg>
+              </div>
+              <div>
+                <p className="font-sans font-bold opacity-60 leading-[13px] tracking-[1.66px] text-[10px] ">
+                  PRO
+                </p>
+                <svg
+                  className="mt-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="15"
+                >
+                  <path
+                    fill="none"
+                    stroke="#000"
+                    strokeWidth="2"
+                    d="M1 8.124L5.623 13 17 1"
+                  />
+                </svg>
+              </div>
+              <div>
+                <p className="font-sans font-bold opacity-60 leading-[13px] tracking-[1.66px] text-[10px] ">
+                  BUSINESS
+                </p>
+                <svg
+                  className="mt-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="15"
+                >
+                  <path
+                    fill="none"
+                    stroke="#000"
+                    strokeWidth="2"
+                    d="M1 8.124L5.623 13 17 1"
+                  />
+                </svg>
+              </div>
+            </div>
+            <hr className="w-full h-[2px] mt-[24px] bg-gray-300" />
+            <h1 className="font-sans font-bold text-3 mt-[24px] leading-4 tracking-[2px]">
+              EMBEDDING CUSTOM CONTENT
+            </h1>
+            <div className="mt-4 flex justify-between ">
+              <div>
+                <p className="font-sans font-bold opacity-60 leading-[13px] tracking-[1.66px] text-[10px] ">
+                  BASIC
+                </p>
+              </div>
+              <div>
+                <p className="font-sans font-bold opacity-60 leading-[13px] tracking-[1.66px] text-[10px] ">
+                  PRO
+                </p>
+                <svg
+                  className="mt-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="15"
+                >
+                  <path
+                    fill="none"
+                    stroke="#000"
+                    strokeWidth="2"
+                    d="M1 8.124L5.623 13 17 1"
+                  />
+                </svg>
+              </div>
+              <div>
+                <p className="font-sans font-bold opacity-60 leading-[13px] tracking-[1.66px] text-[10px] ">
+                  BUSINESS
+                </p>
+                <svg
+                  className="mt-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="15"
+                >
+                  <path
+                    fill="none"
+                    stroke="#000"
+                    strokeWidth="2"
+                    d="M1 8.124L5.623 13 17 1"
+                  />
+                </svg>
+              </div>
+            </div>
+            <hr className="w-full h-[2px] mt-[24px] bg-gray-300" />
+            <h1 className="font-sans font-bold text-3 mt-[24px] leading-4 tracking-[2px]">
+              CUSTOMIZE METADATA
+            </h1>
+            <div className="mt-4 flex justify-between ">
+              <div>
+                <p className="font-sans font-bold opacity-60 leading-[13px] tracking-[1.66px] text-[10px] ">
+                  BASIC
+                </p>
+              </div>
+              <div>
+                <p className="font-sans font-bold opacity-60 leading-[13px] tracking-[1.66px] text-[10px] ">
+                  PRO
+                </p>
+                <svg
+                  className="mt-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="15"
+                >
+                  <path
+                    fill="none"
+                    stroke="#000"
+                    strokeWidth="2"
+                    d="M1 8.124L5.623 13 17 1"
+                  />
+                </svg>
+              </div>
+              <div>
+                <p className="font-sans font-bold opacity-60 leading-[13px] tracking-[1.66px] text-[10px] ">
+                  BUSINESS
+                </p>
+                <svg
+                  className="mt-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="15"
+                >
+                  <path
+                    fill="none"
+                    stroke="#000"
+                    strokeWidth="2"
+                    d="M1 8.124L5.623 13 17 1"
+                  />
+                </svg>
+              </div>
+            </div>
+            <hr className="w-full h-[2px] mt-[24px] bg-gray-300" />
+            <h1 className="font-sans font-bold text-3 mt-[24px] leading-4 tracking-[2px]">
+              ADVANCED METRICS
+            </h1>
+            <div className="mt-4 flex justify-between ">
+              <div>
+                <p className="font-sans font-bold opacity-60 leading-[13px] tracking-[1.66px] text-[10px] ">
+                  BASIC
+                </p>
+              </div>
+              <div>
+                <p className="font-sans font-bold opacity-60 leading-[13px] tracking-[1.66px] text-[10px] ">
+                  PRO
+                </p>
+              </div>
+              <div>
+                <p className="font-sans font-bold opacity-60 leading-[13px] tracking-[1.66px] text-[10px] ">
+                  BUSINESS
+                </p>
+                <svg
+                  className="mt-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="15"
+                >
+                  <path
+                    fill="none"
+                    stroke="#000"
+                    strokeWidth="2"
+                    d="M1 8.124L5.623 13 17 1"
+                  />
+                </svg>
+              </div>
+            </div>
+            <hr className="w-full h-[2px] mt-[24px] bg-gray-300" />
+            <h1 className="font-sans font-bold text-3 mt-[24px] leading-4 tracking-[2px]">
+              PHOTO DOWNLOADS
+            </h1>
+            <div className="mt-4 flex justify-between ">
+              <div>
+                <p className="font-sans font-bold opacity-60 leading-[13px] tracking-[1.66px] text-[10px] ">
+                  BASIC
+                </p>
+              </div>
+              <div>
+                <p className="font-sans font-bold opacity-60 leading-[13px] tracking-[1.66px] text-[10px] ">
+                  PRO
+                </p>
+              </div>
+              <div>
+                <p className="font-sans font-bold opacity-60 leading-[13px] tracking-[1.66px] text-[10px] ">
+                  BUSINESS
+                </p>
+                <svg
+                  className="mt-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="15"
+                >
+                  <path
+                    fill="none"
+                    stroke="#000"
+                    strokeWidth="2"
+                    d="M1 8.124L5.623 13 17 1"
+                  />
+                </svg>
+              </div>
+            </div>
+            <hr className="w-full h-[2px] mt-[24px] bg-gray-300" />
+            <h1 className="font-sans font-bold text-3 mt-[24px] leading-4 tracking-[2px]">
+              SEARCH ENGINE INDEXING
+            </h1>
+            <div className="mt-4 flex justify-between ">
+              <div>
+                <p className="font-sans font-bold opacity-60 leading-[13px] tracking-[1.66px] text-[10px] ">
+                  BASIC
+                </p>
+              </div>
+              <div>
+                <p className="font-sans font-bold opacity-60 leading-[13px] tracking-[1.66px] text-[10px] ">
+                  PRO
+                </p>
+              </div>
+              <div>
+                <p className="font-sans font-bold opacity-60 leading-[13px] tracking-[1.66px] text-[10px] ">
+                  BUSINESS
+                </p>
+                <svg
+                  className="mt-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="15"
+                >
+                  <path
+                    fill="none"
+                    stroke="#000"
+                    strokeWidth="2"
+                    d="M1 8.124L5.623 13 17 1"
+                  />
+                </svg>
+              </div>
+            </div>
+            <hr className="w-full h-[2px] mt-[24px] bg-gray-300" />
+            <h1 className="font-sans font-bold text-3 mt-[24px] leading-4 tracking-[2px]">
+              CUSTOM ANALYTICS
+            </h1>
+            <div className="mt-4 flex justify-between ">
+              <div>
+                <p className="font-sans font-bold opacity-60 leading-[13px] tracking-[1.66px] text-[10px] ">
+                  BASIC
+                </p>
+              </div>
+              <div>
+                <p className="font-sans font-bold opacity-60 leading-[13px] tracking-[1.66px] text-[10px] ">
+                  PRO
+                </p>
+              </div>
+              <div>
+                <p className="font-sans font-bold opacity-60 leading-[13px] tracking-[1.66px] text-[10px] ">
+                  BUSINESS
+                </p>
+                <svg
+                  className="mt-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="15"
+                >
+                  <path
+                    fill="none"
+                    stroke="#000"
+                    strokeWidth="2"
+                    d="M1 8.124L5.623 13 17 1"
+                  />
+                </svg>
+              </div>
+            </div>
+            <hr className="w-full h-[2px] mt-[24px] bg-gray-300" />
+          </div>
+        </div>
+        <div
+          className="w-[375px] h-[288px] pl-[32px] pr-[33px] mt-[64px] "
+          style={{ backgroundImage: `url(${footerImage})` }}
+        >
+          <img src={rectangle} alt="" />
+          <div className="mt-[58px]">
+            <h1 className="text-white font-sans font-bold text-[32px] leading-[40px] tracking-[3.33px] ">
+              WE’RE IN BETA. GET YOUR INVITE TODAY!
+            </h1>
+            <div className="flex flex-row pt-[26px]">
+              <p className="text-white font-sans leading-[16px] text-[12px] tracking-[2px] font-bold">
+                GET AN INVITE
+              </p>
+              <img
+                className="h-[12px] mt-[2px] ml-[18px]"
+                src={whiteArrow}
+                alt=""
+              />
+            </div>
+          </div>
         </div>
       </div>
     </>
