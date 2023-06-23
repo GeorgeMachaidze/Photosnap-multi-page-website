@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import moonOfAppalacia from "./assets/stories/mobile/moon-of-appalacia.jpg";
 import whiteArrow from "./assets/arrow.png";
 import mountains from "./assets/stories/mobile/mountains.jpg";

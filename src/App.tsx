@@ -8,6 +8,8 @@ import {
 import "./App.css";
 import Home from "./Home.tsx";
 import Stories from "./Stories.tsx";
+import Featured from "./Featured.tsx";
+import Pricing from "./Pricing.tsx";
 import logo from "./assets/logo.png";
 import logoText from "./assets/PHOTOSNAP.png";
 import X from "./assets/X.png";
@@ -45,6 +47,8 @@ function App() {
           <Route path="/" element={<Navigate to="/Home" />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/Stories" element={<Stories />} />
+          <Route path="/Featured" element={<Featured />} />
+          <Route path="/Pricing" element={<Pricing />} />
         </Routes>
         <div className="bg-black pb-[56px]">
           <div className="flex justify-center pt-[56px]">
