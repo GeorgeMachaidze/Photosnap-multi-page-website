@@ -12,12 +12,12 @@ function Pricing() {
           <img src={rectangle} alt="" />
           <div>
             <h1 className="text-white font-sans font-bold tracking-[3.33px] leading-10 mt-[66px] text-[32px]">
-              FEATURES
+              PRICING
             </h1>
             <p className="text-white font-sans font-[15px] leading-[25px] opacity-60 mt-4">
-              We make sure all of our features are designed to be loved by every
-              aspiring and even professional photograpers who wanted to share
-              their stories.
+              Create a your stories, Photosnap is a platform for photographers
+              and visual storytellers. It’s the simple way to create and share
+              your photos.
             </p>
           </div>
         </div>

@@ -4,6 +4,7 @@ import {
   Routes,
   Route,
   Navigate,
+  Link,
 } from "react-router-dom";
 import "./App.css";
 import Home from "./Home.tsx";
@@ -20,6 +21,36 @@ import printerest from "./assets/home/mobile/pinterest.png";
 import twitter from "./assets/home/mobile/Twitter.png";
 import youtube from "./assets/home/mobile/Youtube.png";
 import whiteArrow from "./assets/arrow.png";
+
+const HamburgerMenu = () => {
+  return (
+    <div className="absolute top-[60px] left-0 bg-white w-full pl-[33px] pr-[33px] flex flex-col items-center">
+      <div className="flex flex-col items-center gap-5">
+        <Link to={"/Stories"}>
+          <h1 className="mt-9 font-sans font-bold text-[15px] leading-5 tracking-[2.5px]">
+            STORIES
+          </h1>
+        </Link>
+        <Link to={"/Featured"}>
+          <h1 className="font-sans font-bold text-[15px] leading-5 tracking-[2.5px]">
+            FEATURES
+          </h1>
+        </Link>
+        <Link to={"/Pricing"}>
+          <h1 className="font-sans font-bold text-[15px] leading-5 tracking-[2.5px]">
+            PRICING
+          </h1>
+        </Link>
+      </div>
+      <hr className="w-full h-[2px] mt-5 bg-black opacity-25" />
+      <div className="mt-5 bg-black w-full mb-[32px] ">
+        <h1 className="font-sans font-bold text-white text-center text-[15px] tracking-[2.5px] leading-5 mt-[14px] mb-[14px]">
+          GET AN INVITE
+        </h1>
+      </div>
+    </div>
+  );
+};
 
 function App() {
   const [menu, setMenu] = useState(true);
@@ -39,7 +70,10 @@ function App() {
                 <hr className="  bg-black w-[20px] h-[3px]"></hr>
               </div>
             ) : (
-              <img className=" w-[15px] h-[15px]" src={X} alt="" />
+              <div>
+                <img className=" w-[15px] h-[15px]" src={X} alt="" />
+                <HamburgerMenu />
+              </div>
             )}
           </div>
         </div>
@@ -63,18 +97,26 @@ function App() {
             <img className="w-5 h-5" src={instagram} alt="" />
           </div>
           <div className="flex flex-col gap-5 items-center mt-[50px]">
-            <h1 className="text-white text-[12px] font-sans font-bold tracking-[2px]">
-              HOME
-            </h1>
-            <h1 className="text-white text-[12px] font-sans font-bold tracking-[2px]">
-              STORIES
-            </h1>
-            <h1 className="text-white text-[12px] font-sans font-bold tracking-[2px]">
-              FEATURES
-            </h1>
-            <h1 className="text-white text-[12px] font-sans font-bold tracking-[2px]">
-              PRICING
-            </h1>
+            <Link to={"/Home"}>
+              <h1 className="text-white text-[12px] font-sans font-bold tracking-[2px]">
+                HOME
+              </h1>
+            </Link>
+            <Link to={"/Stories"}>
+              <h1 className="text-white text-[12px] font-sans font-bold tracking-[2px]">
+                STORIES
+              </h1>
+            </Link>
+            <Link to={"/Featured"}>
+              <h1 className="text-white text-[12px] font-sans font-bold tracking-[2px]">
+                FEATURES
+              </h1>
+            </Link>
+            <Link to={"/Pricing"}>
+              <h1 className="text-white text-[12px] font-sans font-bold tracking-[2px]">
+                PRICING
+              </h1>
+            </Link>
           </div>
           <div className="flex flex-row justify-center pt-[120px]">
             <p className="text-white font-sans leading-[16px] text-[12px] tracking-[2px] font-bold">
