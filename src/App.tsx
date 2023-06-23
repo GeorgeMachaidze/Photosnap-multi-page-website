@@ -61,8 +61,12 @@ function App() {
     <>
       <Router>
         <div className="p-[24px] flex  ">
-          <img className="w-[16px] h-[16px]" src={logo} alt="" />
-          <img className="ml-2 h-[16px]" src={logoText} alt="" />
+          <Link to={"/Home"}>
+            <img className="w-[16px] h-[16px]" src={logo} alt="" />
+          </Link>
+          <Link to={"/Home"}>
+            <img className="ml-2 h-[16px]" src={logoText} alt="" />
+          </Link>
           <div className="ml-[140px]" onClick={handleMenuClick}>
             {menu ? (
               <div className=" flex flex-col gap-[4px]">

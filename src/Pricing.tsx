@@ -1,9 +1,14 @@
+import { useState } from "react";
 import hero from "./assets/pricing/mobile/hero.jpg";
 import rectangle from "./assets/home/mobile/Rectangle.png";
 import footerImage from "./assets/footerImage.jpg";
 import whiteArrow from "./assets/arrow.png";
 
 function Pricing() {
+  const [price, setPrice] = useState(true);
+  const handlePriceChange = () => {
+    setPrice(!price);
+  };
   return (
     <>
       <div>
@@ -22,13 +27,33 @@ function Pricing() {
           </div>
         </div>
         <div className="pt-[64px] pl-[60px] pr-[60px] flex items-center">
-          <h1 className="font-sans font-bold">Monthly</h1>
-          <div className="ml-8 mr-8">
-            <div className="w-[64px] h-[32px] bg-gray-300 rounded-[16px] pt-1">
-              <div className="bg-black w-[24px] h-[24px] ml-1 rounded-full"></div>
+          <h1
+            className={`font-sans font-bold ${
+              price ? "text-black" : "opacity-50"
+            }`}
+          >
+            Monthly
+          </h1>
+          <div onClick={handlePriceChange} className="ml-8 mr-8">
+            <div
+              className={`w-[64px] h-[32px] rounded-[16px] pt-1 ${
+                price ? "bg-gray-300" : "bg-black"
+              }`}
+            >
+              <div
+                className={` w-[24px] h-[24px]  rounded-full ${
+                  price ? "bg-black ml-1" : "bg-white ml-[36px]"
+                } `}
+              ></div>
             </div>
           </div>
-          <h1 className="font-sans opacity-50 font-bold">Yearly</h1>
+          <h1
+            className={`font-sans  font-bold ${
+              price ? "opacity-50" : "text-black"
+            }`}
+          >
+            Yearly
+          </h1>
         </div>
         <div className="ml-[28px] mr-[28px]">
           <div className="mt-10 pl-[29px] pr-[29px] items-center flex flex-col bg-gray-100">
@@ -40,7 +65,7 @@ function Pricing() {
               aspiring photographers.
             </p>
             <h1 className="font-sans font-bold text-[40px] tracking-[4.16px] leading-[48px] text-center mt-10">
-              $19.00
+              {price ? "$19.00" : "$190.00"}
             </h1>
             <p className="font-sans opacity-60 text-[15px] leading-[25px]">
               per month
@@ -63,7 +88,7 @@ function Pricing() {
               veterans and professionals.
             </p>
             <h1 className="font-sans font-bold text-[40px] tracking-[4.16px] leading-[48px] text-white text-center mt-10">
-              $39.00
+              {price ? "$39.00" : "$390.00"}
             </h1>
             <p className="font-sans opacity-60 text-white text-[15px] leading-[25px]">
               per month
@@ -85,7 +110,7 @@ function Pricing() {
               Recommended for business owners.
             </p>
             <h1 className="font-sans font-bold text-[40px] tracking-[4.16px] leading-[48px] text-center mt-10">
-              $99.00
+              {price ? "$99.00" : "$990.00"}
             </h1>
             <p className="font-sans opacity-60 text-[15px] leading-[25px]">
               per month
