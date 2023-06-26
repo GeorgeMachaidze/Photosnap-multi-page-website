@@ -60,14 +60,14 @@ function App() {
   return (
     <>
       <Router>
-        <div className="p-[24px] flex  ">
+        <div className="p-[24px] flex items-center md:pb-[16px] ">
           <Link to={"/Home"}>
             <img className="w-[16px] h-[16px]" src={logo} alt="" />
           </Link>
           <Link to={"/Home"}>
             <img className="ml-2 h-[16px]" src={logoText} alt="" />
           </Link>
-          <div className="ml-[140px]" onClick={handleMenuClick}>
+          <div className="ml-[140px] md:hidden" onClick={handleMenuClick}>
             {menu ? (
               <div className=" flex flex-col gap-[4px]">
                 <hr className="  bg-black w-[20px] h-[2px]"></hr>
@@ -80,6 +80,28 @@ function App() {
               </div>
             )}
           </div>
+          <div className=" hidden md:flex ml-10 gap-[37px] justify-center items-center">
+            <Link to="/Stories" className="ml-4">
+              <h1 className="font-sans font-bold tracking-[2px] text-[12px]">
+                STORIES
+              </h1>
+            </Link>
+            <Link to="/Featured" className="ml-4">
+              <h1 className="font-sans font-bold tracking-[2px] text-[12px]">
+                FEATURES
+              </h1>
+            </Link>
+            <Link to="/Pricing" className="ml-4">
+              <h1 className="font-sans font-bold tracking-[2px] text-[12px]">
+                PRICING
+              </h1>
+            </Link>
+            <div className="pt-2 pb-2 pl-[20px] pr-[20px] bg-black">
+              <h1 className="text-[12px] font-sans tracking-[2px] font-bold text-white">
+                GET AN INVITE
+              </h1>
+            </div>
+          </div>
         </div>
         <Routes>
           <Route path="/" element={<Navigate to="/Home" />} />
@@ -88,53 +110,58 @@ function App() {
           <Route path="/Featured" element={<Featured />} />
           <Route path="/Pricing" element={<Pricing />} />
         </Routes>
-        <div className="bg-black pb-[56px]">
-          <div className="flex justify-center pt-[56px]">
-            <img className="w-[16px] h-[16px]" src={logo} alt="" />
-            <img className="ml-2 h-[16px]" src={logoTextWhite} alt="" />
+        <div className="bg-black pb-[56px] md:flex md:justify-between">
+          <div className="md:ml-[40px] md:flex md:flex-col">
+            <div className="flex justify-center pt-[56px] md:pt-[64px] md:justify-normal md:order-[-2] ">
+              <img className="w-[16px] h-[16px]" src={logo} alt="" />
+              <img className="ml-2 h-[16px]" src={logoTextWhite} alt="" />
+            </div>
+            <div className="flex justify-center mt-[32px] gap-[13px] md:justify-normal md:order-[-1] md:mt-[73px]">
+              <img className="w-5 h-5" src={facebook} alt="" />
+              <img className="w-5 h-5" src={youtube} alt="" />
+              <img className="w-5 h-5" src={twitter} alt="" />
+              <img className="w-5 h-5" src={printerest} alt="" />
+              <img className="w-5 h-5" src={instagram} alt="" />
+            </div>
+
+            <div className="flex flex-col gap-5 items-center mt-[50px] md:flex-row md:order-[-2] md:mt-[32px]">
+              <Link to={"/Home"}>
+                <h1 className="text-white text-[12px] font-sans font-bold tracking-[2px]">
+                  HOME
+                </h1>
+              </Link>
+              <Link to={"/Stories"}>
+                <h1 className="text-white text-[12px] font-sans font-bold tracking-[2px]">
+                  STORIES
+                </h1>
+              </Link>
+              <Link to={"/Featured"}>
+                <h1 className="text-white text-[12px] font-sans font-bold tracking-[2px]">
+                  FEATURES
+                </h1>
+              </Link>
+              <Link to={"/Pricing"}>
+                <h1 className="text-white text-[12px] font-sans font-bold tracking-[2px]">
+                  PRICING
+                </h1>
+              </Link>
+            </div>
           </div>
-          <div className="flex justify-center mt-[32px] gap-[13px]">
-            <img className="w-5 h-5" src={facebook} alt="" />
-            <img className="w-5 h-5" src={youtube} alt="" />
-            <img className="w-5 h-5" src={twitter} alt="" />
-            <img className="w-5 h-5" src={printerest} alt="" />
-            <img className="w-5 h-5" src={instagram} alt="" />
-          </div>
-          <div className="flex flex-col gap-5 items-center mt-[50px]">
-            <Link to={"/Home"}>
-              <h1 className="text-white text-[12px] font-sans font-bold tracking-[2px]">
-                HOME
-              </h1>
-            </Link>
-            <Link to={"/Stories"}>
-              <h1 className="text-white text-[12px] font-sans font-bold tracking-[2px]">
-                STORIES
-              </h1>
-            </Link>
-            <Link to={"/Featured"}>
-              <h1 className="text-white text-[12px] font-sans font-bold tracking-[2px]">
-                FEATURES
-              </h1>
-            </Link>
-            <Link to={"/Pricing"}>
-              <h1 className="text-white text-[12px] font-sans font-bold tracking-[2px]">
-                PRICING
-              </h1>
-            </Link>
-          </div>
-          <div className="flex flex-row justify-center pt-[120px]">
-            <p className="text-white font-sans leading-[16px] text-[12px] tracking-[2px] font-bold">
-              GET AN INVITE
+          <div>
+            <div className="flex flex-row justify-center pt-[120px] md:pt-[64px] md:justify-right md:ml-10">
+              <p className="text-white font-sans leading-[16px] text-[12px] tracking-[2px] font-bold">
+                GET AN INVITE
+              </p>
+              <img
+                className="h-[12px] mt-[2px] ml-[18px]"
+                src={whiteArrow}
+                alt=""
+              />
+            </div>
+            <p className="pt-10 text-white opacity-60 text-center md:pt-[120px] md:mr-[40px] md:text-[15px] md:text-right">
+              Copyright 2019. All Rights Reserved
             </p>
-            <img
-              className="h-[12px] mt-[2px] ml-[18px]"
-              src={whiteArrow}
-              alt=""
-            />
           </div>
-          <p className="pt-10 text-white opacity-60 text-center">
-            Copyright 2019. All Rights Reserved
-          </p>
         </div>
       </Router>
     </>
