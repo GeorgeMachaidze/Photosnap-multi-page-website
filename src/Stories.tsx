@@ -1,7 +1,5 @@
 import moonOfAppalacia from "./assets/stories/mobile/moon-of-appalacia.jpg";
 import whiteArrow from "./assets/arrow.png";
-import mountains from "./assets/stories/mobile/mountains.jpg";
-import newYork from "./assets/stories/mobile/cityscapes.jpg";
 import voyage from "./assets/stories/mobile/18-days-voyage.jpg";
 import architecturals from "./assets/stories/mobile/architecturals.jpg";
 import world from "./assets/stories/mobile/world-tour.jpg";
@@ -61,53 +59,49 @@ function Stories() {
             <div className="bg-black gradient w-full h-full absolute  bottom-0 left-0 z-[-1]  "></div>
           </div>
         </div>
-        <div
-          className="w-[375px] h-[375px] relative"
-          style={{ backgroundImage: `url(${mountains})` }}
-        >
-          <div className="pl-[33px] pr-[24px] relative z-10 ">
-            <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
-              April 16th 2020
-            </h1>
-            <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px] ">
-              The Mountains
-            </h1>
-            <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
-              by John Appleseed
-            </p>
-            <hr className="w-full mt-4 opacity-25" />
-            <div className="flex flex-row mt-5 justify-between ">
-              <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
-                READ STORY
+        <div className="md:flex">
+          <div className="w-[375px] h-[375px] relative md:w-[50%] md:h-[500px] md:bg-cover bg-[url('./assets/stories/mobile/mountains.jpg')]  md:bg-[url('./assets/stories/desktop/mountains.jpg')]">
+            <div className="pl-[33px] pr-[24px] relative z-10 ">
+              <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans md:pt-[340px] ">
+                April 16th 2020
+              </h1>
+              <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px] ">
+                The Mountains
+              </h1>
+              <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
+                by John Appleseed
               </p>
-              <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
+              <hr className="w-full mt-4 opacity-25" />
+              <div className="flex flex-row mt-5 justify-between ">
+                <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
+                  READ STORY
+                </p>
+                <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
+              </div>
             </div>
+            <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
           </div>
-          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
-        </div>
-        <div
-          className="w-[375px] h-[375px] relative"
-          style={{ backgroundImage: `url(${newYork})` }}
-        >
-          <div className="pl-[33px] pr-[24px] relative z-10 ">
-            <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
-              April 14th 2020
-            </h1>
-            <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px] ">
-              Sunset Cityscapes
-            </h1>
-            <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
-              by Benjamin Cruz
-            </p>
-            <hr className="w-full mt-4 opacity-25" />
-            <div className="flex flex-row mt-5 justify-between ">
-              <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
-                READ STORY
+          <div className="w-[375px] h-[375px] relative md:w-[50%] md:h-[500px] md:bg-cover bg-[url('./assets/stories/mobile/cityscapes.jpg')]  md:bg-[url('./assets/stories/desktop/cityscapes.jpg')]">
+            <div className="pl-[33px] pr-[24px] relative z-10 ">
+              <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans md:pt-[340px] ">
+                April 14th 2020
+              </h1>
+              <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px] ">
+                Sunset Cityscapes
+              </h1>
+              <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
+                by Benjamin Cruz
               </p>
-              <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
+              <hr className="w-full mt-4 opacity-25" />
+              <div className="flex flex-row mt-5 justify-between ">
+                <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
+                  READ STORY
+                </p>
+                <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
+              </div>
             </div>
+            <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
           </div>
-          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
         </div>
         <div
           className="w-[375px] h-[375px] relative"
