@@ -23,15 +23,16 @@ function Stories() {
       <div>
         <div>
           <div
-            className="w-[375px] h-[315px]"
+            className="w-[375px] h-[315px] md:hidden"
             style={{ backgroundImage: `url(${moonOfAppalacia})` }}
           ></div>
-          <div className="pl-[30px] pr-[30px] pt-[50px] pb-[50px] bg-black">
-            <h1 className="text-white text-[12px] font-sans leading-4 font-bold tracking-[2px]">
+          <div className="pl-[30px] pr-[30px] pt-[50px] pb-[50px] bg-black md:flex md:flex-col md:pb-[90px] md:relative md:bg-[url('./assets/stories/tablet/moon-of-appalacia.jpg')]">
+            <h1 className="text-white text-[12px] font-sans leading-4 font-bold tracking-[2px] md:mt-[122px]">
               LAST MONTH’S FEATURED STORY
             </h1>
-            <h1 className="text-white mt-4 leading-10 text-[32px] tracking-[3.3px] font-sans font-bold">
-              HAZY FULL MOON OF APPALACHIA
+            <h1 className="text-white mt-4 leading-10 text-[32px] tracking-[3.3px] font-sans font-bold md:text-[40px] md:tracking-[4.1px] md:leading-[48px]">
+              HAZY FULL <br className="hidden md:block" />
+              MOON OF <br className="hidden md:block" /> APPALACHIA
             </h1>
             <div className="flex mt-4">
               <h1 className="text-white font-sans text-[13px] leading-[17px] opacity-75">
@@ -41,18 +42,23 @@ function Stories() {
                 by John Appleseed
               </h1>
             </div>
-            <h1 className="text-white mt-4 font-sans text-[14px] leading-[25px] opacity-60">
-              The dissected plateau area, while not actually made up of
-              geological mountains, is popularly called "mountains," especially
-              in eastern Kentucky and West Virginia, and while the ridges are
-              not high, the terrain is extremely rugged.
+            <h1 className="text-white mt-4 font-sans text-[14px] leading-[25px] opacity-60 md:text-[15px]">
+              The dissected plateau area, while not actually made up of{" "}
+              <br className="hidden md:block" />
+              geological mountains, is popularly called "mountains,"{" "}
+              <br className="hidden md:block" />
+              especially in eastern Kentucky and West Virginia, and{" "}
+              <br className="hidden md:block" /> while the ridges are not high,
+              the terrain is extremely <br className="hidden md:block" />{" "}
+              rugged.
             </h1>
-            <div className="flex flex-row mt-5">
-              <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
+            <div className="flex flex-row mt-5  ">
+              <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold ">
                 READ THE STORY
               </p>
               <img className="h-[12px] mt-[2px] ml-4" src={whiteArrow} alt="" />
             </div>
+            <div className="bg-black gradient w-full h-full absolute  bottom-0 left-0 z-[-1]  "></div>
           </div>
         </div>
         <div

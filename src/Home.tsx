@@ -15,7 +15,7 @@ import thirdImageTablet from "./assets/home/tablet/designed-for-everyone.jpg";
 import mountainsTablet from "./assets/home/tablet/mountainsTablet.png";
 import newYorkTablet from "./assets/home/tablet/newYorkTablet.png";
 import voyageTablet from "./assets/home/tablet/voyageTablet.png";
-import architecturaclsTablet from "./assets/home/tablet/architecturalsTablet.png";
+import architecturalsTablet from "./assets/home/tablet/architecturalsTablet.png";
 
 function Home() {
   return (
@@ -255,7 +255,7 @@ function Home() {
         </div>
         <div
           className="w-[375px] h-[375px] relative hidden md:flex md:w-[50%] md:h-[500px] md:bg-cover"
-          style={{ backgroundImage: `url(${architecturals})` }}
+          style={{ backgroundImage: `url(${architecturalsTablet})` }}
         >
           <div className="pl-[33px] pr-[24px] relative z-10 ">
             <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px] pt-[361px]">
