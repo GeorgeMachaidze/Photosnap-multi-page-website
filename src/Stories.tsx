@@ -1,19 +1,5 @@
 import moonOfAppalacia from "./assets/stories/mobile/moon-of-appalacia.jpg";
 import whiteArrow from "./assets/arrow.png";
-import voyage from "./assets/stories/mobile/18-days-voyage.jpg";
-import architecturals from "./assets/stories/mobile/architecturals.jpg";
-import world from "./assets/stories/mobile/world-tour.jpg";
-import uforeseen from "./assets/stories/mobile/unforeseen-corners.jpg";
-import lion from "./assets/stories/mobile/king-on-africa.jpg";
-import tree from "./assets/stories/mobile/trip-to-nowhere.jpg";
-import see from "./assets/stories/mobile/rage-of-the-sea.jpg";
-import horse from "./assets/stories/mobile/running-free.jpg";
-import wave from "./assets/stories/mobile/behind-the-waves.jpg";
-import calm from "./assets/stories/mobile/calm-waters.jpg";
-import milky from "./assets/stories/mobile/milky-way.jpg";
-import dark from "./assets/stories/mobile/dark-forest.jpg";
-import somwarpet from "./assets/stories/mobile/somwarpet.jpg";
-import dreams from "./assets/stories/mobile/land-of-dreams.jpg";
 
 function Stories() {
   return (
@@ -103,341 +89,313 @@ function Stories() {
             <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
           </div>
         </div>
-        <div
-          className="w-[375px] h-[375px] relative"
-          style={{ backgroundImage: `url(${voyage})` }}
-        >
-          <div className="pl-[33px] pr-[24px] relative z-10 ">
-            <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
-              April 11th 2020
-            </h1>
-            <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px]">
-              18 Days Voyage
-            </h1>
-            <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
-              by Alexei Borodin
-            </p>
-            <hr className="w-full mt-4 opacity-25" />
-            <div className="flex flex-row mt-5 justify-between ">
-              <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
-                READ STORY
+        <div className="md:flex">
+          <div className="w-[375px] h-[375px] relative md:w-[50%] md:h-[500px] md:bg-cover bg-[url('./assets/stories/mobile/18-days-voyage.jpg')]  md:bg-[url('./assets/stories/desktop/18-days-voyage.jpg')]">
+            <div className="pl-[33px] pr-[24px] relative z-10 ">
+              <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans md:pt-[340px]">
+                April 11th 2020
+              </h1>
+              <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px]">
+                18 Days Voyage
+              </h1>
+              <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
+                by Alexei Borodin
               </p>
-              <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
+              <hr className="w-full mt-4 opacity-25" />
+              <div className="flex flex-row mt-5 justify-between ">
+                <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
+                  READ STORY
+                </p>
+                <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
+              </div>
             </div>
+            <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
           </div>
-          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
+          <div className="w-[375px] h-[375px] relative  md:w-[50%] md:h-[500px] md:bg-cover bg-[url('./assets/stories/mobile/architecturals.jpg')]  md:bg-[url('./assets/stories/desktop/architecturals.jpg')]">
+            <div className="pl-[33px] pr-[24px] relative z-10 ">
+              <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans md:pt-[340px] ">
+                April 9th 2020
+              </h1>
+              <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px]">
+                Architecturals
+              </h1>
+              <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
+                by Samantha Brooke
+              </p>
+              <hr className="w-full mt-4 opacity-25" />
+              <div className="flex flex-row mt-5 justify-between ">
+                <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
+                  READ STORY
+                </p>
+                <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
+              </div>
+            </div>
+            <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
+          </div>
         </div>
-        <div
-          className="w-[375px] h-[375px] relative"
-          style={{ backgroundImage: `url(${architecturals})` }}
-        >
-          <div className="pl-[33px] pr-[24px] relative z-10 ">
-            <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
-              April 9th 2020
-            </h1>
-            <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px]">
-              Architecturals
-            </h1>
-            <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
-              by Samantha Brooke
-            </p>
-            <hr className="w-full mt-4 opacity-25" />
-            <div className="flex flex-row mt-5 justify-between ">
-              <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
-                READ STORY
+        <div className="md:flex">
+          <div className="w-[375px] h-[375px] relative  md:w-[50%] md:h-[500px] md:bg-cover bg-[url('./assets/stories/mobile/world-tour.jpg')]  md:bg-[url('./assets/stories/desktop/world-tour.jpg')]">
+            <div className="pl-[33px] pr-[24px] relative z-10 ">
+              <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans md:pt-[340px] ">
+                April 7th 2020
+              </h1>
+              <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px]">
+                World Tour 2019
+              </h1>
+              <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
+                by Timothy Wagner
               </p>
-              <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
+              <hr className="w-full mt-4 opacity-25" />
+              <div className="flex flex-row mt-5 justify-between ">
+                <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
+                  READ STORY
+                </p>
+                <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
+              </div>
             </div>
+            <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
           </div>
-          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
+          <div className="w-[375px] h-[375px] relative md:h-[500px] md:bg-cover md:w-[50%] bg-[url('./assets/stories/mobile/unforeseen-corners.jpg')]  md:bg-[url('./assets/stories/desktop/unforeseen-corners.jpg')]">
+            <div className="pl-[33px] pr-[24px] relative z-10 ">
+              <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans md:pt-[340px] ">
+                April 3th 2020
+              </h1>
+              <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px]">
+                Unforeseen Corners
+              </h1>
+              <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
+                by William Malcolm
+              </p>
+              <hr className="w-full mt-4 opacity-25" />
+              <div className="flex flex-row mt-5 justify-between ">
+                <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
+                  READ STORY
+                </p>
+                <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
+              </div>
+            </div>
+            <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
+          </div>
         </div>
-        <div
-          className="w-[375px] h-[375px] relative"
-          style={{ backgroundImage: `url(${world})` }}
-        >
-          <div className="pl-[33px] pr-[24px] relative z-10 ">
-            <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
-              April 7th 2020
-            </h1>
-            <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px]">
-              World Tour 2019
-            </h1>
-            <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
-              by Timothy Wagner
-            </p>
-            <hr className="w-full mt-4 opacity-25" />
-            <div className="flex flex-row mt-5 justify-between ">
-              <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
-                READ STORY
+        <div className="md:flex">
+          <div className="w-[375px] h-[375px] relative md:w-[50%] md:h-[500px] md:bg-cover bg-[url('./assets/stories/mobile/king-on-africa.jpg')]  md:bg-[url('./assets/stories/desktop/king-on-africa.jpg')]">
+            <div className="pl-[33px] pr-[24px] relative z-10 ">
+              <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans md:pt-[340px] ">
+                April 29th 2020
+              </h1>
+              <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px]">
+                King on Africa: Part II
+              </h1>
+              <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
+                by Tim Hillenburg
               </p>
-              <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
+              <hr className="w-full mt-4 opacity-25" />
+              <div className="flex flex-row mt-5 justify-between ">
+                <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
+                  READ STORY
+                </p>
+                <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
+              </div>
             </div>
+            <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
           </div>
-          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
+          <div className="w-[375px] h-[375px] relative md:w-[50%] md:h-[500px] md:bg-cover bg-[url('./assets/stories/mobile/trip-to-nowhere.jpg')]  md:bg-[url('./assets/stories/desktop/trip-to-nowhere.jpg')]">
+            <div className="pl-[33px] pr-[24px] relative z-10 ">
+              <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans md:pt-[340px] ">
+                March 21th 2020
+              </h1>
+              <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px]">
+                The Trip to Nowhere
+              </h1>
+              <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
+                by Felicia Rourke
+              </p>
+              <hr className="w-full mt-4 opacity-25" />
+              <div className="flex flex-row mt-5 justify-between ">
+                <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
+                  READ STORY
+                </p>
+                <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
+              </div>
+            </div>
+            <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
+          </div>
         </div>
-        <div
-          className="w-[375px] h-[375px] relative"
-          style={{ backgroundImage: `url(${uforeseen})` }}
-        >
-          <div className="pl-[33px] pr-[24px] relative z-10 ">
-            <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
-              April 3th 2020
-            </h1>
-            <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px]">
-              Unforeseen Corners
-            </h1>
-            <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
-              by William Malcolm
-            </p>
-            <hr className="w-full mt-4 opacity-25" />
-            <div className="flex flex-row mt-5 justify-between ">
-              <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
-                READ STORY
+        <div className="md:flex">
+          <div className="w-[375px] h-[375px] relative md:w-[50%] md:h-[500px] md:bg-cover bg-[url('./assets/stories/mobile/rage-of-the-sea.jpg')]  md:bg-[url('./assets/stories/desktop/trip-to-nowhere.jpg')]">
+            <div className="pl-[33px] pr-[24px] relative z-10 ">
+              <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans md:pt-[340px]">
+                April 21th 2020
+              </h1>
+              <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px]">
+                Rage of The Sea
+              </h1>
+              <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
+                by Mohammed Abdul
               </p>
-              <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
+              <hr className="w-full mt-4 opacity-25" />
+              <div className="flex flex-row mt-5 justify-between ">
+                <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
+                  READ STORY
+                </p>
+                <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
+              </div>
             </div>
+            <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
           </div>
-          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
+          <div className="w-[375px] h-[375px] relative md:w-[50%] md:h-[500px] md:bg-cover bg-[url('./assets/stories/mobile/running-free.jpg')]  md:bg-[url('./assets/stories/desktop/running-free.jpg')]">
+            <div className="pl-[33px] pr-[24px] relative z-10 ">
+              <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans md:pt-[340px] ">
+                March 16th 2020
+              </h1>
+              <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px]">
+                Running Free
+              </h1>
+              <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
+                by Michelle
+              </p>
+              <hr className="w-full mt-4 opacity-25" />
+              <div className="flex flex-row mt-5 justify-between ">
+                <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
+                  READ STORY
+                </p>
+                <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
+              </div>
+            </div>
+            <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
+          </div>
         </div>
-        <div
-          className="w-[375px] h-[375px] relative"
-          style={{ backgroundImage: `url(${lion})` }}
-        >
-          <div className="pl-[33px] pr-[24px] relative z-10 ">
-            <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
-              April 29th 2020
-            </h1>
-            <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px]">
-              King on Africa: Part II
-            </h1>
-            <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
-              by Tim Hillenburg
-            </p>
-            <hr className="w-full mt-4 opacity-25" />
-            <div className="flex flex-row mt-5 justify-between ">
-              <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
-                READ STORY
+        <div className="md:flex">
+          <div className="w-[375px] h-[375px] relative md:w-[50%] md:h-[500px] md:bg-cover bg-[url('./assets/stories/mobile/behind-the-waves.jpg')]  md:bg-[url('./assets/stories/desktop/behind-the-waves.jpg')]">
+            <div className="pl-[33px] pr-[24px] relative z-10 ">
+              <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans md:pt-[340px] ">
+                March 11th 2020
+              </h1>
+              <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px]">
+                Behind the Waves
+              </h1>
+              <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
+                by Lamarr Wilson
               </p>
-              <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
+              <hr className="w-full mt-4 opacity-25" />
+              <div className="flex flex-row mt-5 justify-between ">
+                <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
+                  READ STORY
+                </p>
+                <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
+              </div>
             </div>
+            <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
           </div>
-          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
+          <div className="w-[375px] h-[375px] relative md:w-[50%] md:h-[500px] md:bg-cover bg-[url('./assets/stories/mobile/calm-waters.jpg')]  md:bg-[url('./assets/stories/desktop/calm-waters.jpg')]">
+            <div className="pl-[33px] pr-[24px] relative z-10 ">
+              <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans md:pt-[340px]  ">
+                March 9th 2020
+              </h1>
+              <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px]">
+                Calm Waters
+              </h1>
+              <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
+                by Samantha Brooke
+              </p>
+              <hr className="w-full mt-4 opacity-25" />
+              <div className="flex flex-row mt-5 justify-between ">
+                <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
+                  READ STORY
+                </p>
+                <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
+              </div>
+            </div>
+            <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
+          </div>
         </div>
-        <div
-          className="w-[375px] h-[375px] relative"
-          style={{ backgroundImage: `url(${tree})` }}
-        >
-          <div className="pl-[33px] pr-[24px] relative z-10 ">
-            <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
-              March 21th 2020
-            </h1>
-            <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px]">
-              The Trip to Nowhere
-            </h1>
-            <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
-              by Felicia Rourke
-            </p>
-            <hr className="w-full mt-4 opacity-25" />
-            <div className="flex flex-row mt-5 justify-between ">
-              <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
-                READ STORY
+        <div className="md:flex">
+          <div className="w-[375px] h-[375px] relative md:w-[50%] md:h-[500px] md:bg-cover bg-[url('./assets/stories/mobile/milky-way.jpg')]  md:bg-[url('./assets/stories/desktop/milky-way.jpg')]">
+            <div className="pl-[33px] pr-[24px] relative z-10 ">
+              <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans md:pt-[340px] ">
+                March 5th 2020
+              </h1>
+              <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px]">
+                The Milky Way
+              </h1>
+              <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
+                by Benjamin Cruz
               </p>
-              <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
+              <hr className="w-full mt-4 opacity-25" />
+              <div className="flex flex-row mt-5 justify-between ">
+                <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
+                  READ STORY
+                </p>
+                <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
+              </div>
             </div>
+            <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
           </div>
-          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
+          <div className="w-[375px] h-[375px] relative md:w-[50%] md:h-[500px] md:bg-cover bg-[url('./assets/stories/mobile/dark-forest.jpg')]  md:bg-[url('./assets/stories/desktop/dark-forest.jpg')]">
+            <div className="pl-[33px] pr-[24px] relative z-10 ">
+              <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans md:pt-[340px] ">
+                March 4th 2020
+              </h1>
+              <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px]">
+                Night at The Dark Forest
+              </h1>
+              <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
+                by Mohammed Abdul
+              </p>
+              <hr className="w-full mt-4 opacity-25" />
+              <div className="flex flex-row mt-5 justify-between ">
+                <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
+                  READ STORY
+                </p>
+                <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
+              </div>
+            </div>
+            <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
+          </div>
         </div>
-        <div
-          className="w-[375px] h-[375px] relative"
-          style={{ backgroundImage: `url(${see})` }}
-        >
-          <div className="pl-[33px] pr-[24px] relative z-10 ">
-            <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
-              April 21th 2020
-            </h1>
-            <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px]">
-              Rage of The Sea
-            </h1>
-            <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
-              by Mohammed Abdul
-            </p>
-            <hr className="w-full mt-4 opacity-25" />
-            <div className="flex flex-row mt-5 justify-between ">
-              <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
-                READ STORY
+        <div className="md:flex">
+          <div className="w-[375px] h-[375px] relative md:w-[50%] md:h-[500px] md:bg-cover bg-[url('./assets/stories/mobile/somwarpet.jpg')]  md:bg-[url('./assets/stories/desktop/somwarpet.jpg')]">
+            <div className="pl-[33px] pr-[24px] relative z-10 ">
+              <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans md:pt-[340px] ">
+                March 1st 2020
+              </h1>
+              <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px]">
+                Somwarpet’s Beauty
+              </h1>
+              <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
+                by Michellel
               </p>
-              <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
+              <hr className="w-full mt-4 opacity-25" />
+              <div className="flex flex-row mt-5 justify-between ">
+                <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
+                  READ STORY
+                </p>
+                <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
+              </div>
             </div>
+            <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
           </div>
-          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
-        </div>
-        <div
-          className="w-[375px] h-[375px] relative"
-          style={{ backgroundImage: `url(${horse})` }}
-        >
-          <div className="pl-[33px] pr-[24px] relative z-10 ">
-            <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
-              March 16th 2020
-            </h1>
-            <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px]">
-              Running Free
-            </h1>
-            <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
-              by Michelle
-            </p>
-            <hr className="w-full mt-4 opacity-25" />
-            <div className="flex flex-row mt-5 justify-between ">
-              <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
-                READ STORY
+          <div className="w-[375px] h-[375px] relative md:w-[50%] md:h-[500px] md:bg-cover bg-[url('./assets/stories/mobile/land-of-dreams.jpg')]  md:bg-[url('./assets/stories/desktop/land-of-dreams.jpg')]">
+            <div className="pl-[33px] pr-[24px] relative z-10 ">
+              <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans md:pt-[340px] ">
+                February 25th 2020
+              </h1>
+              <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px]">
+                Land of Dreams
+              </h1>
+              <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
+                by William Malcolm
               </p>
-              <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
+              <hr className="w-full mt-4 opacity-25" />
+              <div className="flex flex-row mt-5 justify-between ">
+                <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
+                  READ STORY
+                </p>
+                <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
+              </div>
             </div>
+            <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
           </div>
-          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
-        </div>
-        <div
-          className="w-[375px] h-[375px] relative"
-          style={{ backgroundImage: `url(${wave})` }}
-        >
-          <div className="pl-[33px] pr-[24px] relative z-10 ">
-            <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
-              March 11th 2020
-            </h1>
-            <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px]">
-              Behind the Waves
-            </h1>
-            <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
-              by Lamarr Wilson
-            </p>
-            <hr className="w-full mt-4 opacity-25" />
-            <div className="flex flex-row mt-5 justify-between ">
-              <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
-                READ STORY
-              </p>
-              <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
-            </div>
-          </div>
-          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
-        </div>
-        <div
-          className="w-[375px] h-[375px] relative"
-          style={{ backgroundImage: `url(${calm})` }}
-        >
-          <div className="pl-[33px] pr-[24px] relative z-10 ">
-            <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
-              March 9th 2020
-            </h1>
-            <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px]">
-              Calm Waters
-            </h1>
-            <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
-              by Samantha Brooke
-            </p>
-            <hr className="w-full mt-4 opacity-25" />
-            <div className="flex flex-row mt-5 justify-between ">
-              <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
-                READ STORY
-              </p>
-              <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
-            </div>
-          </div>
-          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
-        </div>
-        <div
-          className="w-[375px] h-[375px] relative"
-          style={{ backgroundImage: `url(${milky})` }}
-        >
-          <div className="pl-[33px] pr-[24px] relative z-10 ">
-            <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
-              March 5th 2020
-            </h1>
-            <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px]">
-              The Milky Way
-            </h1>
-            <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
-              by Benjamin Cruz
-            </p>
-            <hr className="w-full mt-4 opacity-25" />
-            <div className="flex flex-row mt-5 justify-between ">
-              <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
-                READ STORY
-              </p>
-              <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
-            </div>
-          </div>
-          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
-        </div>
-        <div
-          className="w-[375px] h-[375px] relative"
-          style={{ backgroundImage: `url(${dark})` }}
-        >
-          <div className="pl-[33px] pr-[24px] relative z-10 ">
-            <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
-              March 4th 2020
-            </h1>
-            <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px]">
-              Night at The Dark Forest
-            </h1>
-            <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
-              by Mohammed Abdul
-            </p>
-            <hr className="w-full mt-4 opacity-25" />
-            <div className="flex flex-row mt-5 justify-between ">
-              <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
-                READ STORY
-              </p>
-              <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
-            </div>
-          </div>
-          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
-        </div>
-        <div
-          className="w-[375px] h-[375px] relative"
-          style={{ backgroundImage: `url(${somwarpet})` }}
-        >
-          <div className="pl-[33px] pr-[24px] relative z-10 ">
-            <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
-              March 1st 2020
-            </h1>
-            <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px]">
-              Somwarpet’s Beauty
-            </h1>
-            <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
-              by Michellel
-            </p>
-            <hr className="w-full mt-4 opacity-25" />
-            <div className="flex flex-row mt-5 justify-between ">
-              <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
-                READ STORY
-              </p>
-              <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
-            </div>
-          </div>
-          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
-        </div>
-        <div
-          className="w-[375px] h-[375px] relative"
-          style={{ backgroundImage: `url(${dreams})` }}
-        >
-          <div className="pl-[33px] pr-[24px] relative z-10 ">
-            <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans ">
-              February 25th 2020
-            </h1>
-            <h1 className="font-sans text-6 font-bold text-white text-[18px] leading-[25px]">
-              Land of Dreams
-            </h1>
-            <p className="mt-[1px] font-sans text-[13px] leading-[18px]  text-white">
-              by William Malcolm
-            </p>
-            <hr className="w-full mt-4 opacity-25" />
-            <div className="flex flex-row mt-5 justify-between ">
-              <p className="font-sans text-white text-[12px] tracking-[2px] leading-[14px] font-bold">
-                READ STORY
-              </p>
-              <img className="h-[12px] mt-[2px]" src={whiteArrow} alt="" />
-            </div>
-          </div>
-          <div className="bg-black gradient w-full h-full absolute bottom-0 left-0 z-0 "></div>
         </div>
       </div>
     </>
