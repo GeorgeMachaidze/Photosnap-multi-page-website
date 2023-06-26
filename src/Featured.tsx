@@ -2,24 +2,34 @@ import hero from "./assets/features/mobile/hero.jpg";
 import rectangle from "./assets/home/mobile/Rectangle.png";
 import footerImage from "./assets/footerImage.jpg";
 import whiteArrow from "./assets/arrow.png";
+import heroTablet from "./assets/features/tablet/hero.jpg";
+import rectangleTablet from "./assets/features/tablet/rectangleTablet.png";
 
 function Featured() {
   return (
     <>
       <div>
-        <img src={hero} alt="" />
-        <div className="bg-black pl-[33px] pr-[24px] pb-[72px]">
-          <img src={rectangle} alt="" />
-          <div>
-            <h1 className="text-white font-sans font-bold tracking-[3.33px] leading-10 mt-[66px] text-[32px]">
-              FEATURES
-            </h1>
-            <p className="text-white font-sans font-[15px] leading-[25px] opacity-60 mt-4">
-              We make sure all of our features are designed to be loved by every
-              aspiring and even professional photograpers who wanted to share
-              their stories.
-            </p>
+        <div className="md:flex">
+          <img className="md:hidden" src={hero} alt="" />
+          <img className="md:hidden" src={rectangle} alt="" />
+          <div className="bg-black pl-[33px] pr-[24px] pb-[72px] md:flex md:justify-center items-center md:pb-0">
+            <img
+              className="hidden md:flex md:ml-[-33px]"
+              src={rectangleTablet}
+              alt=""
+            />
+            <div className="md:ml-[48px]">
+              <h1 className="text-white font-sans font-bold tracking-[3.33px] leading-10 mt-[66px] text-[32px] md:text-[40px] md:mt-0">
+                FEATURES
+              </h1>
+              <p className="text-white font-sans font-[15px] leading-[25px] opacity-60 mt-4">
+                We make sure all of our features are designed to be loved by
+                every aspiring and even professional photograpers who wanted to
+                share their stories.
+              </p>
+            </div>
           </div>
+          <img className="hidden md:flex" src={heroTablet} alt="" />
         </div>
         <div className="pt-[64px] pb-[91px] pl-[33px] pr-[24px]">
           <div className="flex flex-col items-center">
