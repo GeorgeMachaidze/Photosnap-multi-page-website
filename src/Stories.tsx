@@ -361,7 +361,7 @@ function Stories() {
             </div>
           </div>
           <div className="md:flex lg:w-[50%]">
-            <div className="w-[375px] h-[375px] relative md:w-[50%] md:h-[500px] md:bg-cover bg-[url('./assets/stories/mobile/somwarpet.jpg')]  md:bg-[url('./assets/stories/desktop/somwarpet.jpg')  hover:translate-y-[-20px] hover:border-b-8 hover:border-b-fuchsia-800]">
+            <div className="w-[375px] h-[375px] relative md:w-[50%] md:h-[500px] md:bg-cover bg-[url('./assets/stories/mobile/somwarpet.jpg')]  md:bg-[url('./assets/stories/desktop/somwarpet.jpg') ] hover:translate-y-[-20px] hover:border-b-8 hover:border-b-fuchsia-800">
               <div className="pl-[33px] pr-[24px] relative z-10 ">
                 <h1 className="pt-[215px] text-white text-[13px] leading-[17px] font-sans md:pt-[340px] ">
                   March 1st 2020
