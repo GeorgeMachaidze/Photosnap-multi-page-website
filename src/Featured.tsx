@@ -1,9 +1,9 @@
 import hero from "./assets/features/mobile/hero.jpg";
 import rectangle from "./assets/home/mobile/Rectangle.png";
-import footerImage from "./assets/footerImage.jpg";
 import whiteArrow from "./assets/arrow.png";
 import heroTablet from "./assets/features/tablet/hero.jpg";
 import rectangleTablet from "./assets/features/tablet/rectangleTablet.png";
+import rectangleForPricingTablet from "./assets/pricing/tablet/rectangleForPricingTablet.png";
 
 function Featured() {
   return (
@@ -124,9 +124,14 @@ function Featured() {
             </div>
           </div>
         </div>
-        <div className="w-[375px] h-[280px] pl-[32px] pr-[33px] md:w-full md:h-[280px] bg-[url('./assets/footerTablet.png')] ">
+        <div className="w-[375px] h-[280px] pl-[32px] pr-[33px] md:w-full md:h-[280px] bg-[url('./assets/footerTablet.png')] md:flex md:flex-row md:pl-0 ">
           <img className="md:hidden" src={rectangle} alt="" />
-          <div className="mt-[58px] md:flex md:flex-row  ">
+          <img
+            className="hidden md:block "
+            src={rectangleForPricingTablet}
+            alt=""
+          />
+          <div className="mt-[58px] md:flex md:flex-row md:mt-0 md:ml-[33px] ">
             <h1 className="text-white font-sans font-bold text-[32px] leading-[40px] tracking-[3.33px] md:mt-[68px] md:text-[40px] md:tracking-[4.4px] md:leading-[48px] ">
               WE’RE IN BETA. <br className="hidden md:flex" /> GET YOUR INVITE
               <br className="hidden md:flex" />
